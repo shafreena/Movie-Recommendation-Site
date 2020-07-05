@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+<text>
+    <name>Nezar Nidam Shafi</name>   
+    <about>This is a simple chat applicaion where users can register and do private chat with any other registered users.</about>
+</text>
+<concepts>
+<concept>
+    html
+</concept>
+<concept>
+    css
+</concept>
+<concept>
+    js
+</concept>
+<concept>
+    jsp
+</concept>
+<concept>
+    servlets
+</concept>
+<concept>
+    cookies
+</concept>
+<concept>
+    session tracking
+</concept>
+<concept>
+   php
+</concept>
+<concept>
+    ajax
+</concept>
+<concept>
+    xml
+</concept>
+</concepts>
+</main>
+
+
+

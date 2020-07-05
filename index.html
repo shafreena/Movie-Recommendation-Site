@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head> 
+    
+  <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery.js"></script>
+     <!-- <link rel="stylesheet" type="text/css" href="bootstrap.css">    -->
+     <!-- indha folder la bootstrap files ah podu... css and js -->
+   <!-- <script src="jquery.js"></script>
+   <script src="bootstrap.js"></script> -->
+    <title>Movie Suggest</title>
+    <style>
+      .my-button{
+        cursor:pointer;
+      }
+      .my-button:hover{
+        background-color: #000;
+      }
+    </style>
+</head> 
+<body>
+    <header style="z-index:10">
+    <div class="logoo"><div class="lll" >MOVIE<span class="l">SUGGEST</span></div>
+    <div class="slogan">GOOD FILMS MAKE LIFE BETTER</div></div>
+  
+    <div class="ll">
+        <ul>
+
+            <li> <i class="fas fa-fire"></i>&nbsp;<a href="http://localhost:8080/wtjsp.jsp">MOST POPULAR &nbsp;&nbsp; </a></li>
+            <li><i class="fas fa-film"></i>&nbsp;<a href="http://localhost/projects/wt/allmovies.php">ALL MOVIES &nbsp;&nbsp;</a></li>
+            <li><i class="fas fa-tv"></i>&nbsp;<a href="http://localhost/projects/wt/allshows.php">ALL SHOWS &nbsp;&nbsp;</a></li>
+            <li><i class="fas fa-medal"></i>&nbsp;<a href="http://localhost:8080/award.jsp">AWARD WINNING &nbsp;&nbsp;</a></li>
+            <li><i class="fas fa-compass"></i>&nbsp;</a><label for="genres">GENRE :</label>
+
+              <select id="genres" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option value="">Select</option>
+               <option value="http://localhost/projects/wt/drama.php">DRAMA</option>
+                <option value="http://localhost/projects/wt/action.php">ACTION</option>
+                <option value="http://localhost/projects/wt/adventure.php">ADVENTURE</option>
+                <option value="http://localhost/projects/wt/crime.php">CRIME</option>
+                <option value="http://localhost/projects/wt/thriller.php">THRILLER</option>
+               <option value="http://localhost/projects/wt/scifi.php">SCI-FI</option>
+                <option value="http://localhost/projects/wt/fantasy.php">FANTASY</option>
+               <option value="http://localhost/projects/wt/romance.php">ROMANCE</option>
+                <option value="http://localhost/projects/wt/biography.php">BIOGRAPHY</option>
+                <option value="http://localhost/projects/wt/history.php">HISTORY</option>
+                <option value="http://localhost/projects/wt/comedy.php">COMEDY</option>
+                <option value="http://localhost/projects/wt/mystery.php">MYSTERY</option>
+                <option value="http://localhost/projects/wt/war.php">WAR</option>
+               <option value="http://localhost/projects/wt/horror.php">HORROR</option>
+              </select> &nbsp;&nbsp;</li>
+        </ul>
+    </div>
+    </header>
+    <div class="body">
+   <div class="h">
+       <h2></h2>
+    <p id="test"></p>
+	<p id="test2"></p>
+    <p id="test3"></p>
+    <p id="test4"></p>
+	<p id="test5"></p>
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img1.jpg" style="width:100%">
+      <div class="text">MOVIE : PARASITE</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img2.jpg" style="width:100%">
+      <div class="text">MOVIE : NORTH BY NORTHWEST</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img3.jpg" style="width:100%">
+      <div class="text">TV SERIES : FRIENDS</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1 class="cinema-header">AT THE THEATRES</h1>
+  </div>
+  <div class="row">
+  <div class="col-3">
+    <div class="card" style="width: 18rem;min-height:350px;margin:10px; ">
+      <img src="blackwidow.PNG" class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Black Widow</h5>
+        <p class="card-text">Set after the events of Captain America: Civil War, Natasha Romanoff finds herself returning to her roots and her family before the Avengers, ready to face the past. Together, they confront the Taskmaster - a mercenary recruiting and brainwashing young girls into becoming assassins.</p>
+        <br><center><btn onclick="window.location.href='http://localhost:8080/examples/servlets/servlet/session?movie1=black-widow'" class="btn btn-primary my-button">Book Tickets</btn></center>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card" style="width: 18rem;min-height:350px;margin:10px; ">
+      <img src="scoob.PNG" class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Scoob!</h5>
+        <p class="card-text">Taking us back to when Shaggy and Scooby first met, and then teamed up with Fred, Daphne and Velma, Scoob! reveals the inception of Mystery Incorporated. This time the group must fight a plot to unleash the ghost dog Cerberus on the world. Will they be able to stop the dogpocalypse?</p>
+        <br><center><btn onclick="window.location.href='http://localhost:8080/examples/servlets/servlet/session?movie2=scoob'" class="btn btn-primary my-button">Book Tickets</btn></center>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card" style="width: 18rem;min-height:350px;margin:10px; ">
+      <img src="spiral.PNG" class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Spiral</h5>
+        <p class="card-text">Serving as the ninth installment in the Saw franchise, the film sees brash Detective Ezekiel "Zeke" Banks (Chris Rock) and his rookie partner (Max Minghella) take charge of a multiple murder investigation. Zeke finds himself as the Killer`s target as the mystery deepens further.</p>
+        <br><center><btn onclick="window.location.href='http://localhost:8080/examples/servlets/servlet/session?movie3=spiral'" class="btn btn-primary my-button">Book Tickets</btn></center>
+      </div>
+      
+    </div>
+  </div>
+  
+  </div>
+</div>
+<h1  class="cinema-header" >
+  UPCOMING MOVIES
+</h1>
+<div id="ulist" style="padding:10px 10%"></div>
+
+
+<script>
+   var xmlhttp;
+      xmlhttp = new XMLHttpRequest();
+	  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let xml = this.responseXML;
+        console.log(xml);
+        let names = xml.querySelectorAll('name');
+        let dates = xml.querySelectorAll('date');
+        for(let i=0;i<names.length;i++)
+        {
+          console.log(i.innerHTML)
+          document.querySelector('#ulist').innerHTML+='<div style="width:50%;float:left;padding:2px;box-sizing:border-box;border:1px solid ">'
+          +names[i].innerHTML+'</div><div style="width:50%;float:right;box-sizing:border-box;padding:2px;border:1px solid ;border-left:none">'
+          +dates[i].innerHTML+'</div>';  
+        }
+        // document.querySelector('#ulist').innerHTML+='<div style="width:50%;float:right">'+'testuu'+'</div>';  
+
+      }
+	  };
+	  xmlhttp.open("GET", "http://localhost:80/projects/wt/wt.xml", true);
+	  xmlhttp.send();
+	  // function assign(tag,xml){
+		// document.querySelector('.'+tag).innerHTML = xml.querySelector(tag).innerHTML
+	  // }
+
+
+
+    
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+}
+$.ajax({
+                type: "GET",
+                url: "http:localhost:8080/examples/servlets/servlet/session",
+                dataType: "jsonp",
+                data: {
+                    
+                },
+                cache: false,
+                success: function (html) {
+                    // if(!html.match('Failed')){
+                        console.log(html);
+                    // }else{
+                    //     alert(html.trim());
+                    // }
+                }
+            });
+</script>
+</body>
+</html>
